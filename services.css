@@ -1,0 +1,34 @@
+.services .heading{
+    text-align: center;
+    font-size: 50px;
+    color: orange;
+
+}
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.services .box-container .box{
+    flex:16 16 480px;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+.services .box-container .box i{
+    padding: 16px;
+    font-size: 80px;
+    color:orange;
+}
+.services .box-container .box h3{
+    font-size:40px;
+    color: #333;
+}
+.services .box-container .box p{
+    font-size: 20px;
+    color: #666;
+    padding: 16px 0; 
+}
+.services .box-container .box:hover{
+    box-shadow: 0 16px 32px black;
+}
