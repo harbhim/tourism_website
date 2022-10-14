@@ -6,52 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schemes</title>
     <link rel="stylesheet" href="./schemes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
     <div class="schemes_block">
-        <section class="schemes_card">
-            <img src="./img/manali.jpg" alt="MANALI">
-            <h5> PLACE : MANALI </h5>
-            <div>
-                <h6> AGE-GROUP : 5-50 YEARS </h6>
-                <h6> DAYS OF TRAVEL : 7-10 DAYS </h6>
-            </div>
+        <section class="carousel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/manali.jpg" class="d-block w-100" alt="manali">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/ellora_caves.jpeg" class="d-block w-100" alt="ellora">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/andaman_and_nicobar.jpg" class="d-block w-100" alt="andaman">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>  
+            </section>
+        </div>
+        <section class="description">
+            <h2>Prepare to be amaze with Theme.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </section>
-        <section class="schemes_card">
-            <img src="./img/andaman_and_nicobar.jpg" alt="andaman">
-            <h5> PLACE : Andaman & Nicobar </h5>
-            <div>
-                <h6> AGE-GROUP : 5-40 YEARS </h6>
-                <h6> DAYS OF TRAVEL : 7-10 DAYS </h6>
-            </div>
+        <section class="popular">
+            <h2> Most Popular Schemes</h2>
+            <h4><a href="">View all places</a></h4>
+
         </section>
-        <section class="schemes_card">
-            <img src="./img/ellora_caves.jpeg" alt="ellora_cave">
-            <h5> PLACE : Ellora</h5>
-            <div>
-                <h6> AGE-GROUP : 5-50 YEARS </h6>
-                <h6> DAYS OF TRAVEL : 2 DAYS </h6>
+        <div class="cards">
+            <div class="scheme_card">
+                <img src="./img/ellora_caves.jpeg" alt="ellora">
+                <h3>ELLORA</h3>
+                <div class="desc">
+                    <h6>Age Group : 0 - 70 years</h6>
+                    <h6>Days of Travel : 2 Days</h6>
+                </div>
             </div>
-        </section>
-        <section class="schemes_card">
-            <img src="./img/gir_national_park.jpg" alt="gir">
-            <h5> PLACE : Gir</h5>
-            <div>
-                <h6> AGE-GROUP : 5-70 YEARS </h6>
-                <h6> DAYS OF TRAVEL : 5 DAYS </h6>
+            <div class="scheme_card">
+                <img src="./img/ellora_caves.jpeg" alt="ellora">
+                <h3>ELLORA</h3>
+                <div class="desc">
+                    <h6>Age Group : 0 - 70 years</h6>
+                    <h6>Days of Travel : 2 Days</h6>
+                </div>                
             </div>
-        </section>
-        <section class="schemes_card">
-            <img src="./img/pachmarhi.jpeg" alt="pachmarhi">
-            <h5> PLACE : pachmarhi</h5>
-            <div>
-                <h6> AGE-GROUP : 5-40 YEARS </h6>
-                <h6> DAYS OF TRAVEL : 3 DAYS </h6>
+            <div class="scheme_card">
+                <img src="./img/ellora_caves.jpeg" alt="ellora">
+                <h3>ELLORA</h3>
+                <div class="desc">
+                    <h6>Age Group : 0 - 70 years</h6>
+                    <h6>Days of Travel : 2 Days</h6>
+                </div>
             </div>
-        </section>
-        <section class="schemes_card"></section>
-        <section class="schemes_card"></section>
-        <section class="schemes_card"></section>
-    </div>
+            <div class="scheme_card"></div>
+            <div class="scheme_card"></div>
+            <div class="scheme_card"></div>
+            <div class="scheme_card"></div>
+            <div class="scheme_card"></div>
+        </div>
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
