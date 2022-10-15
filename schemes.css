@@ -3,17 +3,23 @@
     margin: 0%;
     padding: 0%;
 }
+.bdy{
+    background-image: linear-gradient(#FFD1D1, #D2DAFF, #FCFFB2);
+}
+
 .schemes_block{
-    width: 95%;
-    height: 70vh;
+    width: 80%;
+    height: 80vh;
     margin: auto;
+    margin-bottom: -75px;
 }
 .d-block{
     width: 100%;
-    height: 485px;
+    height: 650px;
 }
 .description{
     background-color: #007DF5;
+    padding-top: 25px;
     width: 100%;
     height: 15vh;
 }
@@ -21,9 +27,15 @@
     text-align: center;
     color: white;
 }
+.description>h2{
+    font-size: 50px;
+}
+.description>p{
+    font-size:25px;
+}
 .popular{
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .popular>h4>a{
     text-decoration: none;
@@ -32,7 +44,7 @@
     width:80%;
     height: auto;
     margin: auto;
-    border: 2px solid black;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -40,24 +52,54 @@
 .scheme_card{
     height: 350px;
     width: 300px;
-    border: 2px solid black;
+    border: 4px ridge black;
     margin: 30px;
+}
+.scheme_card:hover{
+    box-shadow: 0 0 10px #636363,
+    0 0 30px #636363,
+    0 0 50px #636363,
+    0 0 70px #636363,
+    0 0 90px #636363;
+    transform: scale(1.15);
 }
 .scheme_card>img{
     height: 87%;
     width: 100%;
 }
 .scheme_card>h3{
-    background-color: #007DF5;
-    color: white;
+    background-color: #04040497;
+    color: #ffffff;
     position: relative;
     top: -302px;
 }
 .desc{
     position: relative;
-    background-color: #007DF5;
+    background-color: #313131;
     top: -43px;
 }
 .desc>h6{
+    color: white;
+}
+footer {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007DF5;
+}
+
+table {
+    width: 80%;
+}
+
+th {
+    padding-bottom: 30px;
+    color: #EEF1FF;
+}
+
+td {
+    padding-bottom: 5px;
     color: white;
 }
