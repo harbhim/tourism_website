@@ -5,7 +5,7 @@
 }
 
 .header {
-    background-color: #256D85;
+    background-color: #007DF5;
     height: 75px;
     text-align: center;
     font-size: 25px;
@@ -33,7 +33,7 @@ body {
 }
 
 .carousel-caption{
-    background-color: #256D85B0;
+    background-color: #007DF5B0;
     border-radius: 15px;
 }
 
@@ -65,9 +65,9 @@ body {
 }
 
 #gridimg:hover{
-    box-shadow: 3px 3px 10px #256D85;
-    height: 210px;
-    width: 282px;
+    box-shadow: 3px 3px 10px #007DF5;
+    transform: scale(1.1,1.1);
+    transition: transform 1s;
 }
 
 .links {
@@ -95,7 +95,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #256D85;
+    background-color: #007DF5;
 }
 
 table {
