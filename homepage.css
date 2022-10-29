@@ -4,13 +4,13 @@
     padding: 0%;
 }
 
-.header {
+/* .header {
     background-color: #007DF5;
     height: 75px;
     text-align: center;
     font-size: 25px;
     color: white;
-}
+} */
 
 body {
     background-image: linear-gradient(#FFD1D1, #D2DAFF, #FCFFB2);
@@ -67,7 +67,7 @@ body {
 #gridimg:hover{
     box-shadow: 3px 3px 10px #007DF5;
     transform: scale(1.1,1.1);
-    transition: transform 1s;
+    transition: transform 0.5s;
 }
 
 .links {
