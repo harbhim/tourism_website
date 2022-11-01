@@ -62,6 +62,7 @@
     0 0 70px #636363,
     0 0 90px #636363;
     transform: scale(1.15);
+    transition: transform 1s;
 }
 .scheme_card>img{
     height: 87%;
