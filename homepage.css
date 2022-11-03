@@ -6,6 +6,7 @@
     outline: none;
     border: none;
 }
+
 /* navbar design */
 
 *::selection {
@@ -132,7 +133,6 @@ header .search-bar-container label:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .login-form-container.active {
@@ -196,7 +196,7 @@ header .search-bar-container label:hover {
 .login-form-container form p a:hover {
     color: #333;
     text-decoration: underline;
-    
+
 }
 
 .login-form-container #form-close {
@@ -208,18 +208,10 @@ header .search-bar-container label:hover {
     cursor: pointer;
 }
 
-/* body {
-    background-image: linear-gradient(#FFD1D1, #D2DAFF, #FCFFB2);
-} */
-.carousel{
-    margin-top:5%;
-}
-.mark1 {
-    color: brown;
-    background-color: #f9dea5;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+/* Carousel */
+
+.carousel {
+    margin-top: 5%;
 }
 
 .d-block {
@@ -230,7 +222,7 @@ header .search-bar-container label:hover {
     padding-top: 20px;
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: #007DF570;
     border-radius: 15px;
 }
@@ -240,6 +232,18 @@ header .search-bar-container label:hover {
     color: rgb(240, 240, 240);
     font-size: medium;
 }
+
+/* Marquee */
+
+.mark1 {
+    color: brown;
+    background-color: #f9dea5;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Image Grid */
 
 .parent {
     display: flex;
@@ -262,11 +266,13 @@ header .search-bar-container label:hover {
     border-radius: 15px;
 }
 
-#gridimg:hover{
+#gridimg:hover {
     box-shadow: 3px 3px 10px #007DF5;
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
     transition: transform 0.5s;
 }
+
+/* Links */
 
 .links {
     width: 50%;
@@ -286,10 +292,13 @@ header .search-bar-container label:hover {
     padding-top: 15px;
     color: #B73E3E;
 }
-#linklist>li a{
+
+#linklist>li a {
     text-decoration: none;
     color: #B73E3E;
 }
+
+/* Footer Part */
 
 footer {
     height: 300px;
@@ -299,6 +308,8 @@ footer {
     align-items: center;
     background-color: #007DF5;
 }
+
+/* Table */
 
 table {
     width: 80%;
@@ -315,12 +326,14 @@ td {
 }
 
 /* For Social Media Icons */
-.social_icons{
+
+.social_icons {
     display: flex;
     margin-top: -10%;
     margin-right: 10%;
 }
-.fa-brands{
+
+.fa-brands {
     padding: 30%;
     font-size: xx-large;
     color: white;

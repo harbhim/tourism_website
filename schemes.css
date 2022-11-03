@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 
 /* navbar design */
@@ -194,7 +197,7 @@ header .search-bar-container label:hover {
 .login-form-container form p a:hover {
     color: #333;
     text-decoration: underline;
-    
+
 }
 
 .login-form-container #form-close {
@@ -206,9 +209,7 @@ header .search-bar-container label:hover {
     cursor: pointer;
 }
 
-.bdy {
-    background-image: linear-gradient(#FFD1D1, #D2DAFF, #FCFFB2);
-}
+/* Carousel */
 
 .schemes_block {
     width: 80%;
@@ -217,7 +218,7 @@ header .search-bar-container label:hover {
     margin-bottom: -75px;
 }
 
-.carousel-inner{
+.carousel-inner {
     margin-top: 10%;
 }
 
@@ -225,6 +226,8 @@ header .search-bar-container label:hover {
     height: 65vh;
     width: 100%;
 }
+
+/* Description Block */
 
 .description {
     background-color: #007DF5;
@@ -255,6 +258,8 @@ header .search-bar-container label:hover {
 .popular>h4>a {
     text-decoration: none;
 }
+
+/* Cards */
 
 .cards {
     width: 80%;
@@ -305,6 +310,8 @@ header .search-bar-container label:hover {
     color: white;
 }
 
+/* Content Related to Schemes */
+
 .content_parent {
     width: 90%;
     height: 80vh;
@@ -347,6 +354,8 @@ header .search-bar-container label:hover {
     color: brown;
 }
 
+/* Links */
+
 .content_child_right {
     width: 35%;
     height: 90%;
@@ -374,6 +383,8 @@ header .search-bar-container label:hover {
     text-decoration: none;
 }
 
+/* Footer Block  */
+
 footer {
     height: 300px;
     width: 100%;
@@ -382,6 +393,8 @@ footer {
     align-items: center;
     background-color: #007DF5;
 }
+
+/* Table */
 
 table {
     width: 80%;
@@ -398,6 +411,7 @@ td {
 }
 
 /* For Social Media Icons */
+
 .social_icons {
     display: flex;
     margin-top: -10%;
