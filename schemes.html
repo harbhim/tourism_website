@@ -9,9 +9,49 @@
   <link rel="stylesheet" href="./schemes.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bdy">
+
+  <!-- Header -->
+
+  <header>
+    <img id="logo" src="./img/logo.jpeg" alt="logo" height="120px" width="120px">
+    <nav class="navbar">
+      <a href="#home">HOME</a>
+      <a href="#book">BOOK</a>
+      <a href="#services">SERVICES</a>
+      <a href="#schemes">SCHEMES</a>
+      <a href="#aboutus">ABOUT US</a>
+      <a href="#contact">CONTACT US</a>
+    </nav>
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+      <i class="fa-solid fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here..">
+      <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+    </form>
+
+  </header>
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have account?<a href="#">regester now</a></p>
+    </form>
+
+  </div>
 
   <!-- TOP CAROUSEL -->
 
@@ -39,7 +79,7 @@
     </div>
   </div>
 
-        <!-- SCHEME_TITLE -->
+  <!-- SCHEME_TITLE -->
 
   <section class="description">
     <h2>Prepare to be amaze with Scheme.</h2>
@@ -49,7 +89,7 @@
     <h2> Most Popular Schemes</h2>
     <h4><a href="">View all places</a></h4>
   </section>
-          <!-- CARDS -->
+  <!-- CARDS -->
   <div class="cards">
     <div class="scheme_card">
       <img src="./img/ellora_caves.jpeg" alt="ellora">
@@ -117,15 +157,26 @@
     </div>
   </div>
 
-        <!-- CONTENT -->
+  <!-- CONTENT -->
 
   <div class="content_parent">
     <div class="content_child_left">
       <h2>Indian Tourism Scheme</h2>
       <p>
-        The Incredible India tourism scheme was launched in 2002 as a way to market the country as a tourist destination. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The scheme was introduced to highlight the natural beauty of the country and its rich cultural history — it was designed to give potential visitors a taste of everything that makes India so great and hopefully inspire them to visit. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Incredible India campaign is the government of India’s flagship marketing initiative for promoting tourism in the country. It has been a resounding success, with tourist numbers rising from <mark>2.3 million in 2001 to 10.9 million</mark> in 2017. The campaign has also been recognized at the national level, winning the National Tourism Award for “Best Outbound Marketing Campaign” in 2015. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Incredible India campaign slogan is <b>“Incredible India”</b> and the logo is a rhinoceros. The rhinoceros is featured on the campaign materials because it is associated with the phrase “rugged and majestic”, which perfectly describes India. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The campaign uses the tagline “Incredible India” and the rhinoceros as its logo to attract tourists to India. It emphasizes the natural beauty and rich culture of the country.
+        The Incredible India tourism scheme was launched in 2002 as a way to market the country as a tourist
+        destination. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The scheme was introduced to highlight the natural beauty
+        of the country and its rich cultural history — it was designed to give potential visitors a taste of everything
+        that makes India so great and hopefully inspire them to visit. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Incredible
+        India campaign is the government of India’s flagship marketing initiative for promoting tourism in the country.
+        It has been a resounding success, with tourist numbers rising from <mark>2.3 million in 2001 to 10.9
+          million</mark> in 2017. The campaign has also been recognized at the national level, winning the National
+        Tourism Award for “Best Outbound Marketing Campaign” in 2015. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Incredible
+        India campaign slogan is <b>“Incredible India”</b> and the logo is a rhinoceros. The rhinoceros is featured on
+        the campaign materials because it is associated with the phrase “rugged and majestic”, which perfectly describes
+        India. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The campaign uses the tagline “Incredible India” and the rhinoceros as
+        its logo to attract tourists to India. It emphasizes the natural beauty and rich culture of the country.
       </p>
-    </div>    
+    </div>
     <div class="content_child_right">
       <h2>
         Links Related to Tourism Schemes
@@ -140,7 +191,7 @@
     </div>
   </div>
 
-        <!-- FOOTER -->
+  <!-- FOOTER -->
 
   <footer>
     <table>
@@ -186,12 +237,18 @@
         <td>Contact Us</td>
       </tr>
     </table>
+    <div class="social_icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+  </div>
   </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <script src="./homepage.js"></script>
 </body>
 
 </html>

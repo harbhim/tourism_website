@@ -13,16 +13,52 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <header>
+    <img src="./images/logo.jpeg" alt="logo" height="120px" width="120px">
+    <!-- <a href="#" class="logo"><span>T</span>ourism</a> -->
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#services">services</a>
+        <a href="#schemes">schemes</a>
+        <a href="#aboutus">aboutus</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+        <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        <i class="fa-solid fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..">
+        <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+    </form>
+
+</header>
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don"t have account?<a href="#">regester now</a></p>
+    </form>
+
+</div>
+
     
     <!-- <header class="header"> header</header>-->
     <nav class="nav">
-       <center><div class="div">
+      <center> <div class="div">
                   <h1><b>ABOUT US</b></h1>
                        <h5>Our mission is to increase the enjoyment,fun and adventure of people's who are traveling.<br>
                            It also gives the opportunity for people to understand the culture, civilization, and religious aspects of a country
                        </h5>
-        </center>
-                 </div>
+        
+                 </div></center>
     </nav>
     <section class="nav2">
         <ul>
@@ -33,7 +69,7 @@
         </ul>
     </section>
     <section class="who"><br><center><h1 style="color:  #484f4f;">Who we are</h1></center>
-      <div class="img"><img src="./img/people-group.jpg" alt="img" height="400px" width="500px">
+      <div class="img"><img src="/images/people-group.jpg" alt="img" height="400px" width="500px">
       </div>
       <div class="imgcontent"> <h5><p> We are problem diagnosticians and solvers.
         We give the best in travel and hospitality services.
@@ -49,52 +85,38 @@
       <nav class="totalcards">
          
         <div class="card" style="width: 18rem;">
-            <img src="./img/man-travelling.jpg" class="card-img-top" alt="img">
+            <img src="/images/man-travelling.jpg" class="card-img-top" alt="img">
             <div class="card-body">
               <p class="card-text">We shows best places to visite</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./img/train.jpg" class="card-img-top" alt="img">
+        <!-- <div class="card" style="width: 18rem;">
+            <img src="/images/train.jpg" class="card-img-top" alt="img">
             <div class="card-body">
               <p class="card-text">We offer easy and convenient travel</p>
             </div>
-        </div>
+        </div>-->
         <div class="card" style="width: 18rem;">
-            <img src="./img/hotel-room.jpg" class="card-img-top" alt="img">
+          <img src="./images/new-zealand-96410_960_720.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <p class="card-text">We offer easy and convenient travel</p>
+          </div>
+       </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/images/hotel-room.jpg" class="card-img-top" alt="img">
             <div class="card-body">
               <p class="card-text">We recomend best hotels to stay</p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="./img/woman-doctor.jpg" class="card-img-top" alt="img">
+            <img src="/images/woman-doctor.jpg" class="card-img-top" alt="img">
             <div class="card-body">
               <p class="card-text">we provide best hospitals</p>
             </div>
           </div>
      </nav>
     </article>  
-     
-
-
-
-        <!--
-        <div class="card2" style="width: 18rem;">
-            <img src="/images/train.jpg" class="card-img-top2" height="350px" width="350px" alt="img">
-            <div class="card-body2">
-              <p class="card-text2">We offer a variety of services to our clients, making it easy and convenient for them to travel</p>
-            </div>
-        </div>
- 
-        <div class="card3" style="width: 18rem;">
-            <img src="/images/hotel-room.jpg" class="card-img-top3"  height="350px" width="350px" alt="img">
-            <div class="card-body3">
-              <p class="card-text3">We recomend best hotels to stay</p>
-            </div>
-        </div>
-        -->
-  
-
+    
       <section class="contactus"> <center><h1 style="color:#303030;">Get in touch</h1></center>
        <div class="dontbeshy">
         <h2><b> Don't be shy</b></h2>
@@ -138,10 +160,55 @@
       </aside>
     </section>
      
-    
+    <footer class="pageend">
+
+      <table>
+          <tr>
+              <th>CONTACT DETAILS</th>
+              <th>CORPORATE OFFICE</th>
+              <th>REGISTERED OFFICE</th>
+              <th>QUICK LINKS</th>
+          </tr>
+
+          <tr>
+              <td> info@heritage-india.com</td>
+              <td>Kripa, 1187/10,</td>
+              <td>B/3 Devi Chambers,</td>
+              <td>Home</td>
+          </tr>
+
+          <tr>
+              <td>+91 992 2442 238</td>
+              <td>Shivajinagar,</td>
+              <td>23/5 Bund Garden Road,</td>
+              <td>Terms & Conditions</td>
+          </tr>
+
+          <tr>
+              <td></td>
+              <td>Pune- 411 005</td>
+              <td>Pune- 411 001</td>
+              <td>Privacy Policy</td>
+          </tr>
+
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Refund & Cancellation Policy</td>
+          </tr>
+
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Contact Us</td>
+          </tr>
+      </table>
+  </footer>
     
     
     <!--<footer class="footer">footer</footer>-->
-
+    <script src="./homepage.js"></script>
     </body>
 </html>

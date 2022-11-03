@@ -6,34 +6,40 @@
     outline: none;
     border: none;
 }
-*::selection{
-    background:aqua;
+/* navbar design */
+
+*::selection {
+    background: aqua;
     color: white;
 }
-html{
+
+html {
     font-size: large;
     overflow-x: hidden;
     scroll-padding-top: 96px;
     scroll-behavior: smooth;
 }
-.btn{
+
+.btn {
     display: inline-block;
     margin-top: 16px;
     background: aqua;
-    color:white;
+    color: white;
     padding: 12.8px 48px;
     border: 3.2px solid aqua;
     cursor: pointer;
     font-size: 27px;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: rgb(34, 6, 6);
     color: aqua;
 }
-header{
-    position:fixed;
-    top:0%;
-    left:0%;
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
     right: 0%;
     background-color: #007DF5;
     z-index: 1000;
@@ -43,49 +49,58 @@ header{
     padding: 32px 9%;
     height: 10%;
 }
-#logo{
+
+#logo {
     height: 300%;
     width: 7%;
 }
-header .navbar{
+
+header .navbar {
     width: 70%;
 }
-header .navbar a{
+
+header .navbar a {
     color: white;
     font-size: 32px;
     margin: 0 12px;
     padding-left: 2%;
     text-decoration: none;
 }
-header .navbar a:hover{
+
+header .navbar a:hover {
     color: aqua;
 }
-header .icons i{
+
+header .icons i {
     font-size: 40px;
     color: white;
     cursor: pointer;
     margin-right: 32px;
 }
-header .icons i:hover{
+
+header .icons i:hover {
     color: aqua;
 }
-header .search-bar-container{
+
+header .search-bar-container {
     position: absolute;
     top: 100%;
     left: 0%;
     right: 0%;
     padding: 24px 32px;
-    background: #333;
+    background: #007DF5;
     border-top: 8px solid rgba(255, 255, 255, .2);
     display: flex;
     align-items: center;
     z-index: 1001;
-    clip-path: polygon(0 0 ,100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
-header .search-bar-container.active{
-    clip-path: polygon(0 0 ,100% 0, 100% 100%, 0 100%);
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-header .search-bar-container #search-bar{
+
+header .search-bar-container #search-bar {
     width: 100%;
     padding: 16px;
     text-transform: none;
@@ -93,49 +108,54 @@ header .search-bar-container #search-bar{
     font-size: 27px;
     border-radius: 8px;
 }
-header .search-bar-container label{
+
+header .search-bar-container label {
     color: white;
     cursor: pointer;
     font-size: 48px;
     margin-left: 24px;
 
 }
-header .search-bar-container label:hover{
+
+header .search-bar-container label:hover {
     color: aqua;
 }
 
-.login-form-container{
+.login-form-container {
     position: fixed;
-    top:-1200%;
+    top: -1200%;
     left: 0%;
     z-index: 10000;
     min-height: 100vh;
     width: 100%;
-    background: black;
+    background: #007DF5;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.login-form-container.active{
-    top:0%;
+
+.login-form-container.active {
+    top: 0%;
 }
 
-.login-form-container form{
+.login-form-container form {
     margin: 32px;
     padding: 24px 32px;
     border-radius: 8px;
     background: white;
     width: 800px;
 }
-.login-form-container form h3{
+
+.login-form-container form h3 {
     font-size: 48px;
     color: #444;
     text-transform: uppercase;
     text-align: center;
     padding: 16px 0;
 }
-.login-form-container form .box{
+
+.login-form-container form .box {
     width: 100%;
     padding: 16px;
     font-size: 27px;
@@ -144,43 +164,53 @@ header .search-bar-container label:hover{
     border: 1.6px solid black;
     text-transform: none;
 }
-.login-form-container form .box:focus{
+
+.login-form-container form .box:focus {
     border-color: aqua;
 }
-.login-form-container form #remember{
+
+.login-form-container form #remember {
     margin: 32px 0;
 }
-.login-form-container form label{
+
+.login-form-container form label {
     font-size: 24px;
 }
-.login-form-container form .btn{
+
+.login-form-container form .btn {
     display: block;
     width: 100%;
 }
-.login-form-container form p{
+
+.login-form-container form p {
     padding: 8px 0;
     font-size: 24px;
     color: rgb(138, 133, 133);
 }
-.login-form-container form p a{
-    color: aqua;
+
+.login-form-container form p a {
+    color: #151870;
+    text-decoration: none;
 }
-.login-form-container form p a:hover{
+
+.login-form-container form p a:hover {
     color: #333;
     text-decoration: underline;
+    
 }
-.login-form-container #form-close{
+
+.login-form-container #form-close {
     position: absolute;
     top: 32px;
     right: 48px;
     font-size: 80px;
     color: aliceblue;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-body {
+/* body {
     background-image: linear-gradient(#FFD1D1, #D2DAFF, #FCFFB2);
-}
+} */
 .carousel{
     margin-top:5%;
 }
@@ -281,5 +311,17 @@ th {
 
 td {
     padding-bottom: 5px;
+    color: white;
+}
+
+/* For Social Media Icons */
+.social_icons{
+    display: flex;
+    margin-top: -10%;
+    margin-right: 10%;
+}
+.fa-brands{
+    padding: 30%;
+    font-size: xx-large;
     color: white;
 }
