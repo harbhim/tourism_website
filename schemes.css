@@ -57,7 +57,7 @@ header {
 }
 
 header .navbar {
-    width: 70%;
+    width: 80%;
 }
 
 header .navbar a {
@@ -65,11 +65,16 @@ header .navbar a {
     font-size: 32px;
     margin: 0 12px;
     padding-left: 2%;
+    padding-right: 2%;
     text-decoration: none;
 }
 
 header .navbar a:hover {
-    color: aqua;
+    color: grey;
+    background-color: #FFFFFFA0;
+    /*text-decoration: underline #FF0000 3px;*/
+    border-radius: 15px;
+    transition: background-color 1s;
 }
 
 header .icons i {
@@ -133,7 +138,6 @@ header .search-bar-container label:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .login-form-container.active {
