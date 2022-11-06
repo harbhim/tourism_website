@@ -1,3 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+/* navbar design */
+
+*::selection {
+    background: aqua;
+    color: white;
+}
+
+html {
+    font-size: large;
+    overflow-x: hidden;
+    scroll-padding-top: 96px;
+    scroll-behavior: smooth;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 16px;
+    background: aqua;
+    color: white;
+    padding: 12.8px 48px;
+    border: 3.2px solid aqua;
+    cursor: pointer;
+    font-size: 27px;
+}
+
+.btn:hover {
+    background-color: rgb(34, 6, 6);
+    color: aqua;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #007DF5;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 9%;
+    height: 10%;
+}
+
+#logo {
+    height: 300%;
+    width: 7%;
+}
+
+header .navbar {
+    width: 80%;
+}
+
+header .navbar a {
+    color: white;
+    font-size: 27px;
+    margin: 0 12px;
+    padding-left: 1%;
+	padding-right: 1%;
+    text-decoration: none;
+}
+
+header .navbar a:hover {
+    color: grey;
+    background-color: #FFFFFFA0;
+    /*text-decoration: underline #FF0000 3px;*/
+    border-radius: 15px;
+    transition: background-color 1s;
+}
+
+header .icons i {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    margin-right: 32px;
+}
+
+header .icons i:hover {
+    color: aqua;
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    padding: 24px 32px;
+    background: #007DF5;
+    border-top: 8px solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 16px;
+    text-transform: none;
+    color: #333;
+    font-size: 27px;
+    border-radius: 8px;
+}
+
+header .search-bar-container label {
+    color: white;
+    cursor: pointer;
+    font-size: 48px;
+    margin-left: 24px;
+
+}
+
+header .search-bar-container label:hover {
+    color: aqua;
+}
+
+.login-form-container {
+    position: fixed;
+    top: -1200%;
+    left: 0%;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: #007DF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container.active {
+    top: 0%;
+}
+
+.login-form-container form {
+    margin: 32px;
+    padding: 24px 32px;
+    border-radius: 8px;
+    background: white;
+    width: 800px;
+}
+
+.login-form-container form h3 {
+    font-size: 48px;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.login-form-container form .box {
+    width: 100%;
+    padding: 16px;
+    font-size: 27px;
+    color: #333;
+    margin: 9.6px 0;
+    border: 1.6px solid black;
+    text-transform: none;
+}
+
+.login-form-container form .box:focus {
+    border-color: aqua;
+}
+
+.login-form-container form #remember {
+    margin: 32px 0;
+}
+
+.login-form-container form label {
+    font-size: 24px;
+}
+
+.login-form-container form .btn {
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form p {
+    padding: 8px 0;
+    font-size: 24px;
+    color: rgb(138, 133, 133);
+}
+
+.login-form-container form p a {
+    color: #151870;
+    text-decoration: none;
+}
+
+.login-form-container form p a:hover {
+    color: #333;
+    text-decoration: underline;
+
+}
+
+.login-form-container #form-close {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    font-size: 80px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+ /*Main Page */
+
 .services .heading{
     text-align: center;
     font-size: 50px;
@@ -7,10 +224,14 @@
 .services .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+	width: 90%;
+	margin-left: 3%;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	gap:10px;
 }
 .services .box-container .box{
-    flex:16 16 480px;
+	flex:16 16 480px;
     border-radius: 8px;
     padding: 16px;
     text-align: center;
@@ -18,10 +239,10 @@
 .services .box-container .box i{
     padding: 16px;
     font-size: 80px;
-    color:orange;
+    color: #007DF5;;
 }
 .services .box-container .box h3{
-    font-size:40px;
+    font-size: 40px;
     color: #333;
 }
 .services .box-container .box p{
@@ -30,5 +251,46 @@
     padding: 16px 0; 
 }
 .services .box-container .box:hover{
-    box-shadow: 0 16px 32px black;
+    box-shadow: 0 16px 32px #007DF5;;
 }
+
+/* Footer Part */
+
+footer {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007DF5;
+}
+
+/* Table */
+
+table {
+    width: 80%;
+}
+
+th {
+    padding-bottom: 30px;
+    color: #EEF1FF;
+	text-align: left;
+}
+
+td {
+    padding-bottom: 5px;
+    color: white;
+}
+
+/* For Social Media Icons */
+
+.social_icons {
+    display: flex;
+    margin-top: -10%;
+    margin-right: 10%;
+}
+
+.fa-brands {
+    padding: 30%;
+    font-size: xx-large;
+    color: white;
