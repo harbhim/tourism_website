@@ -215,15 +215,24 @@ header .search-bar-container label:hover {
 
 /* Carousel */
 
+.main_carousel_parent{
+	width: 100%;
+	border: 2px solid black;
+	display: flex;
+	justify-content: space-around;
+	margin-right: 50px;
+}
+
 .carousel {
     margin-top: 5%;
+	width: 60%;
 }
 
 .d-block {
     height: 650px;
     width: 1200px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 20px;
 }
 
@@ -236,6 +245,14 @@ header .search-bar-container label:hover {
 .carousel-caption>p {
     color: rgb(240, 240, 240);
     font-size: medium;
+}
+
+/*Carousel Image Description*/
+
+.img_description{
+	width: 30%;
+	border: 2px solid black;
+	margin-top: 5%;	
 }
 
 /* Marquee */
@@ -254,6 +271,7 @@ header .search-bar-container label:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+	background-color: #BFBFBF;
 }
 
 .img {
@@ -273,6 +291,10 @@ header .search-bar-container label:hover {
 	overflow: hidden;
 }
 
+.single_img_cont:hover{
+    box-shadow: 3px 3px 10px #007DF5;
+}
+
 #gridimg {
 	position: absolute;
 	top: 0;
@@ -282,7 +304,6 @@ header .search-bar-container label:hover {
 }
 
 #gridimg:hover {
-    box-shadow: 3px 3px 10px #007DF5;
     transform: scale(1.2, 1.2);
     transition: transform 0.7s;
 }
@@ -292,6 +313,8 @@ header .search-bar-container label:hover {
 .links {
     width: 50%;
     height: 450px;
+	background-color: #DBDBDB;
+	border-bottom-left-radius: 70%;
 }
 
 #rellink {
@@ -313,6 +336,14 @@ header .search-bar-container label:hover {
     color: #B73E3E;
 }
 
+#linklist>li a:hover{
+	text-shadow: 0px 0px 10px #B73E3E,
+	0px 0px 30px #C45050,
+	0px 0px 60px #C45050,
+	0px 0px 90px #CB6767,
+	0px 0px 120px #CB6767;
+	transition: text-shadow 0.5s;
+}
 /* Footer Part */
 
 footer {
