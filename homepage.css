@@ -217,7 +217,6 @@ header .search-bar-container label:hover {
 
 .main_carousel_parent{
 	width: 100%;
-	border: 2px solid black;
 	display: flex;
 	justify-content: space-around;
 	margin-right: 50px;
@@ -250,9 +249,17 @@ header .search-bar-container label:hover {
 /*Carousel Image Description*/
 
 .img_description{
+	display: flex;
+	align-items: center;
 	width: 30%;
-	border: 2px solid black;
 	margin-top: 5%;	
+}
+
+.img_description p{
+	font-size: 27px;
+	background: linear-gradient(to right, red, #F000BC, black, green, red, blue, violet);
+	color:transparent;
+	background-clip: text;
 }
 
 /* Marquee */
