@@ -265,16 +265,26 @@ header .search-bar-container label:hover {
     align-items: center;
 }
 
-#gridimg {
+.single_img_cont{
+	position: relative;
     height: 200px;
     width: 272px;
     border-radius: 15px;
+	overflow: hidden;
+}
+
+#gridimg {
+	position: absolute;
+	top: 0;
+	left: 0;
+    height: 200px;
+    width: 272px;
 }
 
 #gridimg:hover {
     box-shadow: 3px 3px 10px #007DF5;
-    transform: scale(1.1, 1.1);
-    transition: transform 0.5s;
+    transform: scale(1.2, 1.2);
+    transition: transform 0.7s;
 }
 
 /* Links */
