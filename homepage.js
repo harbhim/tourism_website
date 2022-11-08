@@ -25,7 +25,6 @@ window.onload = () => {
 function description_next() {
 	let active_img = document.querySelector(".carousel-item-next img");
 	let alt = active_img.getAttribute("alt");
-	console.log(alt);
 	let txt_path = "./txt/" + alt + ".txt";
 
 	var client = new XMLHttpRequest();
@@ -41,7 +40,6 @@ function description_next() {
 function description_prev() {
 	let active_img = document.querySelector(".carousel-item-prev img");
 	let alt = active_img.getAttribute("alt");
-	console.log(alt);
 	let txt_path = "./txt/" + alt + ".txt";
 
 	var client = new XMLHttpRequest();

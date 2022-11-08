@@ -10,7 +10,7 @@
 /* navbar design */
 
 *::selection {
-    background: aqua;
+    background: #007DF5;
     color: white;
 }
 
@@ -72,7 +72,6 @@ header .navbar a {
 header .navbar a:hover {
     color: grey;
     background-color: #FFFFFFA0;
-    /*text-decoration: underline #FF0000 3px;*/
     border-radius: 15px;
     transition: background-color 1s;
 }
@@ -85,7 +84,10 @@ header .icons i {
 }
 
 header .icons i:hover {
-    color: aqua;
+    color: grey;
+    background-color: #FFFFFFA0;
+    border-radius: 15px;
+    transition: background-color 1s;
 }
 
 header .search-bar-container {
@@ -124,7 +126,7 @@ header .search-bar-container label {
 }
 
 header .search-bar-container label:hover {
-    color: aqua;
+	color: aqua;
 }
 
 .login-form-container {
@@ -257,9 +259,7 @@ header .search-bar-container label:hover {
 
 .img_description p{
 	font-size: 27px;
-	background: linear-gradient(to right, red, #F000BC, black, green, red, blue, violet);
-	color:transparent;
-	background-clip: text;
+	color: #000000;
 }
 
 /* Marquee */
@@ -365,7 +365,7 @@ footer {
 /* Table */
 
 table {
-    width: 80%;
+    width: 70%;
 }
 
 th {
@@ -384,6 +384,7 @@ td {
     display: flex;
     margin-top: -10%;
     margin-right: 10%;
+	margin-left: -15%;
 }
 
 .fa-brands {
